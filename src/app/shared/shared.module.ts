@@ -5,6 +5,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './nav/nav.component';
 import { NavLeftComponent } from './nav-left/nav-left.component';
+import { SharedComponent } from './shared.component';
 
 
 
@@ -14,7 +15,8 @@ import { NavLeftComponent } from './nav-left/nav-left.component';
     FooterComponent,
     HeaderComponent,
     NavComponent,
-    NavLeftComponent
+    NavLeftComponent,
+    SharedComponent
   ],
   imports: [
     CommonModule
@@ -25,7 +27,7 @@ import { NavLeftComponent } from './nav-left/nav-left.component';
     HeaderComponent,
     NavComponent,
     NavLeftComponent,
-    SharedModule,
+    SharedComponent
   ]
 })
 export class SharedModule { }

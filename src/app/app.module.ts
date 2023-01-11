@@ -11,18 +11,18 @@ import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PagesComponent,
-    NotFoundComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    SharedModule,
-    PagesModule,
-    AuthModule
+      AppComponent,
+      PagesComponent,
+      NotFoundComponent
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  imports: [
+      BrowserModule,
+      AppRoutingModule,
+      SharedModule,
+      PagesModule,
+      AuthModule
+  ]
 })
 export class AppModule { }

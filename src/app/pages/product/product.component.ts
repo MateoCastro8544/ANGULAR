@@ -15,8 +15,9 @@ export class ProductComponent implements OnInit {
       //this.getProducts();
       //this.getProduct();
       //this.createProduct();
-      this.updateProduct()
-  }
+      //this.updateProduct();
+      this.deleteProduct();
+    }
 
   getProducts(){
     const url = "https://api.escuelajs.co/api/v1/products";
@@ -60,5 +61,12 @@ export class ProductComponent implements OnInit {
     });
   }
 
+   deleteProduct(){
+    
+    const url = "https://api.escuelajs.co/api/v1/products/221";
+     this.httpClient.delete(url).subscribe
+    (response => {console.log(response)
+    });
+  }
   
 }
